@@ -22,9 +22,8 @@ export class AppComponent {
     return '';
   }
 
-  constructor(
-    private authService: AuthService,
-    private router: Router) { }
+  constructor(private authService: AuthService,
+              private router: Router) { }
 
   logOut(): void {
     this.authService.logout();

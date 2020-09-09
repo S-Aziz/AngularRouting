@@ -10,7 +10,7 @@ import { MessageService } from './message.service';
   ]
 })
 export class MessageComponent {
-  get messages(): string[] {
+  get messages() {
     return this.messageService.messages;
   }
 

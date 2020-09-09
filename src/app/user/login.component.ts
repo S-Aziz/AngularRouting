@@ -11,12 +11,10 @@ export class LoginComponent {
   errorMessage: string;
   pageTitle = 'Log In';
 
-  constructor(
-    private authService: AuthService,
-    private router: Router
-  ) { }
+  constructor(private authService: AuthService,
+              private router: Router) { }
 
-  login(loginForm: NgForm): void {
+  login(loginForm: NgForm) {
     if (loginForm && loginForm.valid) {
       const userName = loginForm.form.value.userName;
       const password = loginForm.form.value.password;

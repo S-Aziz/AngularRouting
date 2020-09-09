@@ -66,7 +66,7 @@ export class ProductService {
       );
   }
 
-  private handleError(err: any): Observable<never> {
+  private handleError(err) {
     // in a real world app, we may send the server to some remote logging infrastructure
     // instead of just logging it to the console
     let errorMessage: string;
